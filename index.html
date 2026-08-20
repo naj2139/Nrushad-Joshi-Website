@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nrushad Joshi — HPC Engineer</title>
-<meta name="description" content="Nrushad Joshi — HPC Engineer at Oak Ridge National Laboratory, MS Data Science at Columbia University.">
+<title>Nrushad Joshi — MS Data Science, Columbia University</title>
+<meta name="description" content="Nrushad Joshi — MS Data Science student at Columbia University, previously an HPC Engineer at Oak Ridge National Laboratory.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -16,7 +16,7 @@
 <header class="termbar">
   <div class="termbar-left">
     <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-    <span class="termbar-path">nrushad@career-cluster:~$ <span class="cursor-blink">ssh frontier01.ornl.gov</span></span>
+    <span class="termbar-path">nrushad@career-cluster:~$ <span class="cursor-blink"></span></span>
   </div>
   <div class="termbar-right">
     <span class="termbar-item" id="local-time">--:--:--</span>
@@ -37,9 +37,9 @@
             <path d="M4.5 20c1.4-4 4-6 7.5-6s6.1 2 7.5 6"/>
           </svg>
           <p class="ph-line1">NODE CAM: no signal</p>
-          <p class="ph-line2">drop photo at <code>profile.jpg</code></p>
+          <p class="ph-line2">drop photo at <code>assets/img/profile.jpg</code></p>
         </div>
-        <img src="profile.jpg" alt="Nrushad Joshi" class="photo-real" onload="this.style.display='block'; this.previousElementSibling.style.display='none';" onerror="this.style.display='none';">
+        <img src="assets/img/profile.jpg" alt="Nrushad Joshi" class="photo-real" onload="this.style.display='block'; this.previousElementSibling.style.display='none';" onerror="this.style.display='none';">
       </div>
       <div class="node-tag">
         <span class="node-dot"></span> node: <strong>nrushad-01</strong>
@@ -49,22 +49,21 @@
     <div class="hero-script">
       <div class="script-titlebar">submit_nrushad.sh</div>
       <pre class="script-body"><span class="tok-shebang">#!/bin/bash</span>
-<span class="tok-comment">##################################################</span>
-<span class="tok-comment"># HPC Engineer — Oak Ridge National Laboratory  #</span>
-<span class="tok-comment"># MS Data Science — Columbia University         #</span>
-<span class="tok-comment">##################################################</span>
+<span class="tok-comment"># MS Data Science student — Columbia University</span>
 <span class="tok-directive">#SBATCH</span> <span class="tok-flag">--job-name</span>=<span class="tok-val">nrushad-joshi</span>
-<span class="tok-directive">#SBATCH</span> <span class="tok-flag">--partition</span>=<span class="tok-val">hpc-engineering,ml-infra,quant</span>
 <span class="tok-directive">#SBATCH</span> <span class="tok-flag">--mail-user</span>=<a class="tok-link" href="mailto:nrushad2001@gmail.com">nrushad2001@gmail.com</a>
 <span class="tok-directive">#SBATCH</span> <span class="tok-flag">--export</span>=<span class="tok-key">LINKEDIN</span>=<a class="tok-link" href="https://www.linkedin.com/in/nrushad/" target="_blank" rel="noopener">linkedin.com/in/nrushad</a>
 <span class="tok-directive">#SBATCH</span> <span class="tok-flag">--export</span>=<span class="tok-key">SCHOLAR</span>=<a class="tok-link" href="https://scholar.google.com/" target="_blank" rel="noopener">scholar.google.com/citations?user=nrushad</a>
 <span class="tok-directive">#SBATCH</span> <span class="tok-flag">--output</span>=<span class="tok-val">career.log</span>
 
 <span class="tok-comment"># summary</span>
-<span class="tok-echo">echo</span> <span class="tok-string">"HPC engineer working on the Frontier supercomputer,
-currently completing an MS in Data Science at Columbia.
-Background spans CUDA, MPI, SLURM, and distributed systems,
-with growing interest in ML infrastructure and quant finance."</span></pre>
+<span class="tok-echo">echo</span> <span class="tok-string">"Summary:
+* Passionate about the intersection of High-Performance
+  Computing and Deep Learning
+* Master of Science in Data Science at Columbia University
+* Passionate about supporting scientific research
+* Highly-motivated about increasing knowledge to drive
+  professional development"</span></pre>
     </div>
   </section>
 
@@ -120,18 +119,9 @@ with growing interest in ML infrastructure and quant finance."</span></pre>
             <td class="job-timer" data-base="4100">00:00:00</td>
             <td>cuda,mpi,+12</td>
           </tr>
-          <tr class="queue-row" data-href="summary.html">
-            <td>10235</td>
-            <td class="job-name">summary</td>
-            <td>bio</td>
-            <td><span class="state-pending">PD</span></td>
-            <td class="job-timer-static">00:00:00</td>
-            <td>(Priority)</td>
-          </tr>
         </tbody>
       </table>
     </div>
-    <p class="queue-hint">click a row to open that job &nbsp;&middot;&nbsp; ST = R (running) means the page is live</p>
   </section>
 
 </main>
@@ -141,6 +131,6 @@ with growing interest in ML infrastructure and quant finance."</span></pre>
   <span class="termfooter-right">&copy; <span id="year"></span> Nrushad Joshi</span>
 </footer>
 
-<script src="main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

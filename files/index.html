@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nrushad Joshi — HPC Engineer</title>
+<meta name="description" content="Nrushad Joshi — HPC Engineer at Oak Ridge National Laboratory, MS Data Science at Columbia University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Terminal chrome bar -->
+<header class="termbar">
+  <div class="termbar-left">
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    <span class="termbar-path">nrushad@career-cluster:~$ <span class="cursor-blink">ssh frontier01.ornl.gov</span></span>
+  </div>
+  <div class="termbar-right">
+    <span class="termbar-item" id="local-time">--:--:--</span>
+    <span class="termbar-sep">|</span>
+    <span class="termbar-item">STATUS: <span class="state-running">CONNECTED</span></span>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO: job submission script -->
+  <section class="hero">
+    <div class="hero-photo">
+      <div class="photo-frame">
+        <div class="photo-placeholder">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.4">
+            <circle cx="12" cy="8" r="3.5"/>
+            <path d="M4.5 20c1.4-4 4-6 7.5-6s6.1 2 7.5 6"/>
+          </svg>
+          <p class="ph-line1">NODE CAM: no signal</p>
+          <p class="ph-line2">drop photo at <code>assets/img/profile.jpg</code></p>
+        </div>
+        <img src="assets/img/profile.jpg" alt="Nrushad Joshi" class="photo-real" onload="this.style.display='block'; this.previousElementSibling.style.display='none';" onerror="this.style.display='none';">
+      </div>
+      <div class="node-tag">
+        <span class="node-dot"></span> node: <strong>nrushad-01</strong>
+      </div>
+    </div>
+
+    <div class="hero-script">
+      <div class="script-titlebar">submit_nrushad.sh</div>
+      <pre class="script-body"><span class="tok-shebang">#!/bin/bash</span>
+<span class="tok-comment">##################################################</span>
+<span class="tok-comment"># HPC Engineer — Oak Ridge National Laboratory  #</span>
+<span class="tok-comment"># MS Data Science — Columbia University         #</span>
+<span class="tok-comment">##################################################</span>
+<span class="tok-directive">#SBATCH</span> <span class="tok-flag">--job-name</span>=<span class="tok-val">nrushad-joshi</span>
+<span class="tok-directive">#SBATCH</span> <span class="tok-flag">--partition</span>=<span class="tok-val">hpc-engineering,ml-infra,quant</span>
+<span class="tok-directive">#SBATCH</span> <span class="tok-flag">--mail-user</span>=<a class="tok-link" href="mailto:nrushad2001@gmail.com">nrushad2001@gmail.com</a>
+<span class="tok-directive">#SBATCH</span> <span class="tok-flag">--export</span>=<span class="tok-key">LINKEDIN</span>=<a class="tok-link" href="https://www.linkedin.com/in/nrushad/" target="_blank" rel="noopener">linkedin.com/in/nrushad</a>
+<span class="tok-directive">#SBATCH</span> <span class="tok-flag">--export</span>=<span class="tok-key">SCHOLAR</span>=<a class="tok-link" href="https://scholar.google.com/" target="_blank" rel="noopener">scholar.google.com/citations?user=nrushad</a>
+<span class="tok-directive">#SBATCH</span> <span class="tok-flag">--output</span>=<span class="tok-val">career.log</span>
+
+<span class="tok-comment"># summary</span>
+<span class="tok-echo">echo</span> <span class="tok-string">"HPC engineer working on the Frontier supercomputer,
+currently completing an MS in Data Science at Columbia.
+Background spans CUDA, MPI, SLURM, and distributed systems,
+with growing interest in ML infrastructure and quant finance."</span></pre>
+    </div>
+  </section>
+
+  <!-- SQUEUE navigation -->
+  <section class="queue">
+    <div class="queue-header">
+      <h2>squeue <span class="queue-flag">-u nrushad</span></h2>
+      <span class="queue-refresh">auto-refresh: <span class="state-running">on</span></span>
+    </div>
+
+    <div class="queue-table-wrap">
+      <table class="queue-table">
+        <thead>
+          <tr>
+            <th>JOBID</th>
+            <th>NAME</th>
+            <th>PARTITION</th>
+            <th>ST</th>
+            <th>TIME</th>
+            <th>NODES</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="queue-row" data-href="work-experience.html">
+            <td>10231</td>
+            <td class="job-name">work-experience</td>
+            <td>career</td>
+            <td><span class="state-running">R</span></td>
+            <td class="job-timer" data-base="0">00:00:00</td>
+            <td>ornl,columbia</td>
+          </tr>
+          <tr class="queue-row" data-href="projects.html">
+            <td>10232</td>
+            <td class="job-name">projects</td>
+            <td>builds</td>
+            <td><span class="state-running">R</span></td>
+            <td class="job-timer" data-base="1400">00:00:00</td>
+            <td>github</td>
+          </tr>
+          <tr class="queue-row" data-href="leadership.html">
+            <td>10233</td>
+            <td class="job-name">leadership</td>
+            <td>teams</td>
+            <td><span class="state-running">R</span></td>
+            <td class="job-timer" data-base="2900">00:00:00</td>
+            <td>honig-lab</td>
+          </tr>
+          <tr class="queue-row" data-href="skills.html">
+            <td>10234</td>
+            <td class="job-name">skills</td>
+            <td>stack</td>
+            <td><span class="state-running">R</span></td>
+            <td class="job-timer" data-base="4100">00:00:00</td>
+            <td>cuda,mpi,+12</td>
+          </tr>
+          <tr class="queue-row" data-href="summary.html">
+            <td>10235</td>
+            <td class="job-name">summary</td>
+            <td>bio</td>
+            <td><span class="state-pending">PD</span></td>
+            <td class="job-timer-static">00:00:00</td>
+            <td>(Priority)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="queue-hint">click a row to open that job &nbsp;&middot;&nbsp; ST = R (running) means the page is live</p>
+  </section>
+
+</main>
+
+<footer class="termfooter">
+  <span>nrushad@career-cluster:~$ <span class="cursor-blink">_</span></span>
+  <span class="termfooter-right">&copy; <span id="year"></span> Nrushad Joshi</span>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
